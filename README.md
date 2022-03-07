@@ -1,1 +1,1 @@
-# programy
+# algorytmy i struktury danych-programy
