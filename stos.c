@@ -34,11 +34,11 @@ int main()
     stack = (int *) malloc(sizeof(int) * size); // alokacja pamieci dla stosu
 
     printf("Sprawdzenie stosu: ");
-    stack_empty(top); //wywo�anie funkcji do sprawdzenia zawartosci stosu
+    stack_empty(top); //wywołanie funkcji do sprawdzenia zawartosci stosu
     printf("\n");
 
     for (int i=0;i<size;i++){
-        push(i+1);//wywo�anie funkcji dodajacej elemnty do stosu
+        push(i+1);//wywołanie funkcji dodajacej elemnty do stosu
     }
 
     printf("stos po dodaniu wartosci \n"); //wyswitlenie stosu
@@ -47,14 +47,14 @@ int main()
     }
 
     printf("\nstos po usunieciu wartosci \n");
-    pop(); // wywo�anie funkcji usuwajacej elemnty ze stosu
+    pop(); // wywołanie funkcji usuwajacej elemnty ze stosu
     pop();
-    stack_empty(top);
+    stack_empty(top); // wywołanie funkcji do sprawdzenia zawartosci stosu
     for (int i=0;i<top+1;i++){ // wyswietlenie stosu
         printf("stack[%d]: %d \n", i, stack[i]);
     }
 
-    printf("\nwyswietlenie elementu na szczycie stosu,%d \n", Top()); // wywo�ani funkcji wyswietlajacej
+    printf("\nwyswietlenie elementu na szczycie stosu,%d \n", Top()); // wywołani funkcji wyswietlajacej
                                                                                  // element na szczycie
 
 
